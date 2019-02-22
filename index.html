@@ -1,0 +1,859 @@
+<html>
+	<head>
+		<style>
+			#outer
+			{
+				height:1550px;
+				width:1000px;
+				//border:1px solid #1881f2;
+				margin:0px auto;
+				position:relative;
+			}
+			#top
+			{
+				height:5px;
+				width:1000px;
+				background-color:#1881f2;
+			}
+			#slantedbarnavigation
+			{
+				height:30px;
+				width:1000px;
+			}
+			#slantedbarnavigationleft
+			{
+				height:30px;
+				width:600px;
+				float:left;
+				background-color:white;
+			}
+			#slantedbarnavigationmid
+			{
+				height:30px;
+				width:350px;
+				float:left;
+				background-color:white;
+			}
+			#slantedbarnavigationright
+			{
+				height:30px;
+				width:50px;
+				float:left;
+				background-color:white;
+			}
+			#slantednav
+			{
+				height: 30px;
+				width: 350px;
+				//background-color:black;
+				position: relative;
+				//border:1px solid white;
+				overflow: hidden;
+			}
+			#left
+			{
+				height: 30px;
+				width: 25px;
+				background-color:white;
+				float:left;
+			}
+			#right
+			{	
+				height: 30px;
+				width: 25px;
+				background-color:white;
+				float:left;
+			}
+			#mid
+			{
+				height: 30px;
+				width: 300px;
+				background-color:#1881f2;
+				float:left;
+			}
+			#lefttraingle
+			{
+				width: 0;
+				height: 0;
+				border-left: 25px solid transparent;
+				//border-right: 15px solid transparent;
+				border-top: 30px solid #1881f2;
+			}
+			#righttraingle
+			{
+				width: 0;
+				height: 0;
+				//border-left: 25px solid transparent;
+				border-right: 25px solid transparent;
+				border-top: 30px solid #1881f2;
+			}
+			#mid ul
+			{
+				list-style-type:none;
+				margin:5px;
+				padding:0px;
+			}
+			#mid ul li
+			{
+				display:inline-block;
+				font-size:13px;
+				padding-left:8px;
+				//width:20px;
+			}
+			#mid ul li a
+			{
+				color:white;
+				text-decoration:none;
+			}
+			#name
+			{
+				height:40px;
+				width:1000px;
+				background-color:white;
+				margin-top:10px;
+			}
+			#socialmedia
+			{
+				height:40px;
+				width:330px;
+				background-color:white;
+				float:right;
+				margin-right:75px;
+			}
+			#companyimage
+			{
+				width:200px;
+				height:70px;
+				//background-color:purple;
+				position:absolute;
+				top:0;
+				left:0;
+				margin-top:23px;
+				margin-left:80px;
+				background-image:url('companyname.png');
+				background-size:cover;
+			}	
+			#socialmedialeft
+			{
+				width:175px;
+				height:40px;
+				//background-color:pink;
+				float:left;
+				background-image:url('socialmedia.png');
+				background-size:cover;
+			}
+			#socialmediaright
+			{
+				width:149px;
+				height:34px;
+				border:1px solid lightgrey;
+				background-color:white;
+				float:left;
+				padding:2px;
+			}
+			#socialmediarightleft
+			{
+				width:120px;
+				height:34px;
+				background-color:yellow;
+				float:left;
+			}
+			#socialmediarightright
+			{
+				width:29px;
+				height:34px;
+				//background-color:red;
+				float:left;
+				background-image:url('search.png');
+				background-size:cover;
+				
+			}
+			#searchbar
+			{
+				width:120px;
+				height:34px;
+				float:left;
+				border:none;
+			}
+			#optionsnavigationbar
+			{
+				height:50px;
+				width:1000px;
+				background-color:white;
+				margin-top:15px;
+				//border:1px solid black;
+			}
+			#optionsnavigationbaroptions
+			{
+				width:475px;
+				height:50px;
+				background-color:white;
+				margin-left:450px;
+				position:absolute;
+			}
+			#optionsnavigationbaroptions ul
+			{
+				list-style-type:none;
+				margin-top:9px;
+				padding:0px;
+			}
+			#optionsnavigationbaroptions ul li
+			{
+				display:inline-block;
+				padding:5px;
+				color:lightgrey;
+				//background-color:orange;
+				//border-radius:5px 5px 0px 0px;
+				text-align:center;
+				font-size:20px;
+				font-family:Californian FB;
+			}
+			#optionsnavigationbaroptions ul  li a
+			{
+				text-decoration:none;
+				color:grey;
+			}
+			#imageslider
+			{
+				width:1000px;
+				height:300px;
+				position:absolute;
+				//background-color:red;
+				//border:1px solid  red;
+				background-image:url('slider.png');
+				background-size:cover;
+			}
+			#sliderbutton
+			{
+				margin-left:150px;
+				margin-top:193px;
+			}
+			#sliderbuttonsignup
+			{
+				width:100px;
+				height:30px;
+				background-color:#1881f2;
+				color:white;
+				border:none;
+				text-decoration:none;
+				cursor:pointer;
+			}
+			#hospitalmenu
+			{
+				width:1000px;
+				height:250px;
+				background-color:yellow;
+				margin-top:301px;
+			}
+			#hospitalmenuleft
+			{
+				width:350px;
+				height:250px;
+				background-color:#2196F3;
+				float:left;
+			}
+			#hospitalmenumid
+			{
+				width:300px;
+				height:250px;
+				background-color:#0092A6;
+				float:left;
+			}
+			#hospitalmenuright
+			{
+				width:350px;
+				height:250px;
+				background-color:#2196F3;
+				float:left;
+			}
+			.top
+			{
+				width:350px;
+				height:80px;
+				background-color:#2196F3;
+			}
+			.mid
+			{
+				width:350px;
+				height:35px;
+				margin-top:5px;
+				background-color:#2196F3;
+			}
+			.bottom
+			{
+				height:115px;
+				margin-top:5px;
+				background-color:#2196F3;
+				padding-top:10px;
+			}
+			#drop
+			{
+				width:50px;
+				height:60px;
+				margin:0px auto;
+				background-image:url('drop.png');
+				background-size:cover;
+			}
+			#midtop
+			{
+				width:300px;
+				height:80px;
+				background-color:#0092A6;
+			}
+			#midmid
+			{
+				width:300px;
+				height:35px;
+				margin-top:5px;
+				background-color:#0092A6;
+			}
+			#midbottom
+			{
+				width:300px;
+				height:115px;
+				margin-top:5px;
+				background-color:#0092A6;
+				padding-top:10px;
+			}
+			#messagebody
+			{
+				width:900px;
+				height:500px;
+				background-color:white;
+				margin-left:50px;
+				margin-right:50px;
+				margin-top:30px;
+				border:1px solid white;
+			}
+			#messagebodytop
+			{
+				width:900px;
+				height:30px;
+				background-color:white;
+			}
+			#messagebodytopleft
+			{
+				width:250px;
+				height:30px;
+				background-color:white;
+				float:left;
+			}
+			#messagebodytopright
+			{
+				width:250px;
+				height:30px;
+				background-color:white;
+				float:left;
+				margin-left:310px;
+			}
+			#messagebodymid
+			{
+				height:200px;
+				width:900px;
+				background-color:blue;
+			}
+			#messagebodymidleft
+			{
+				height:200px;
+				width:600px;
+				background-color:orange;
+				float:left;
+			}
+			#messagebodymidright
+			{
+				height:200px;
+				width:300px;
+				background-color:pink;
+				float:left;
+			}
+			#messagebodymidleftphoto
+			{
+				height:200px;
+				width:250px;
+				//background-color:pink;
+				float:left;
+				background-image:url('doctorleft.png');
+				background-size:cover;
+			}
+			#messagebodymidlefttext
+			{
+				height:200px;
+				width:350px;
+				background-color:white;
+				float:left;
+			}
+			#readmore
+			{
+				margin-left:10px;
+				width:80px;
+				height:30px;
+				background-color:#1881f2;
+				color:white;
+				border:none;
+				text-decoration:none;
+				cursor:pointer;
+			}
+			#messagebodymidrighttop
+			{
+				height:100px;
+				width:300px;
+				background-color:orange;
+			}
+			#messagebodymidrightbottom
+			{
+				height:100px;
+				width:300px;
+				background-color:yellow;
+			}
+			#messagebodymidrighttopleft
+			{
+				height:100px;
+				width:100px;
+				background-color:white;
+				float:left;
+			}
+			#messagebodymidrighttopright
+			{
+				height:100px;
+				width:200px;
+				background-color:white;
+				float:left;
+			}
+			#messagebodymidrighttopleftphoto
+			{
+				height:70px;
+				width:70px;
+				background-color:white;
+				background-image:url('doctormenu.png');
+				background-size:cover;
+			}
+			#messagebodybottom
+			{
+				height:170px;
+				width:600px;
+				margin-top:5px;
+				background-color:white;
+				float:left;
+			}
+			#messagebodybottomtop
+			{
+				width:600px;
+				height:30px;
+				background-color:white;
+			}
+			#messagebodybottomtopleft
+			{
+				width:135px;
+				height:30px;
+				background-color:white;
+				float:left;
+			}
+			#messagebodybottomtopright
+			{
+				width:80px;
+				height:30px;
+				background-color:white;
+				float:left;
+				margin-left:265px;
+			}
+			#messagebodybottombottom
+			{
+				width:600px;
+				height:140px;
+				background-color:white;
+			}
+			#messagebodybottombottomleft
+			{
+				width:195px;
+				height:130px;
+				background-color:white;
+				float:left;
+				margin-top:10px;
+				margin-left:5px;
+				//border:1px solid white;
+			}
+			#messagebodybottombottomright
+			{
+				width:195px;
+				height:130px;
+				background-color:white;
+				float:left;
+				margin-top:10px;
+				margin-left:5px;
+				//border:1px solid white;
+			}
+			#messagebodybottombottomvideos
+			{
+				width:190px;
+				height:130px;
+				background-color:white;
+				float:left;
+				margin-top:10px;
+				margin-left:5px;
+			}
+			#messagebodyrightmenu
+			{
+				height:168px;
+				width:298px;
+				margin-top:5px;
+				background-color:white;
+				float:left;
+				border:1px solid white;
+			}	
+			#messagebodyrightmenuheading
+			{
+				height:45px;
+				width:298px;
+				background-color:white;
+				margin-top:5px;
+			}
+			#messagebodyrightmenucontacts
+			{
+				height:118px;
+				width:298px;
+				background-color:white;
+			}
+			#signinbutton
+			{
+				width:70px;
+				height:30px;
+				background-color:#1881f2;
+				color:white;
+				border:none;
+				text-decoration:none;
+				cursor:pointer;
+				float:right;
+				margin-right:20px;
+			}
+			#call
+			{
+				width:445px;
+				height:40px;
+				background-color:#1881f2;
+				float:left;
+					margin-top:40px;
+			}
+			#livechat
+			{
+				width:445px;
+				height:40px;
+				background-color:#232E33;
+				margin-top:10px;
+				float:left;
+				margin-left:10px;
+				padding:0px;
+				margin-right:0px;
+			}
+			#footer
+			{
+				width:1000px;
+				height:300px;
+				background-color:pink;
+			}
+			#footertop
+			{
+				width:1000px;
+				height:250px;
+				background-color:gray;
+			}
+			#footerbottom
+			{
+				width:1000px;
+				height:50px;
+				position:absolute;
+				//border:1px solid black;
+				//background-color:#232E33;
+				background-image:url('fotterbottom.png');
+				background-size:cover;
+			}
+			#a
+			{
+				width:250px;
+				height:250px;
+				background-color:#232E33;
+				float:left;
+			}
+			#b
+			{
+				width:250px;
+				height:250px;
+				background-color:#232E33;
+				float:left;
+			}
+			#c
+			{
+				width:250px;
+				height:250px;
+				background-color:#232E33;
+				float:left;
+			}
+			#d
+			{
+				width:250px;
+				height:250px;
+				background-color:#232E33;
+				float:left;
+			}
+			#text
+			{
+				width:200px;
+				height:150px;
+				background-color:#232E33;
+				margin:auto;
+				margin-top:50px;
+			}
+			ul
+			{
+				list-style-type:none;
+				margin-left:0px;
+				padding-left:0px;
+				padding-top:0px;
+			}
+			a
+			{
+				text-decoration:none;
+				color:lightgrey;
+				font-size:10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div id="top"></div>
+			<div id="slantedbarnavigation">
+				<div id="slantedbarnavigationleft"></div>
+				<div id="slantedbarnavigationmid">
+					<div id="slantednav">
+						<div id="left">
+							<div id="lefttraingle"></div>
+						</div>
+						<div id="mid">
+							<ul>
+								<li><a href="#">Appointments</a></li>
+								<li><a href="#">Find a Doctor</a></li>
+								<li><a href="#">Locations</a></li>
+								<li><a href="#">Careers</a></li>
+							</ul>
+						</div>
+						<div id="right">
+							<div id="righttraingle"></div>
+						</div>
+					</div>
+				</div>
+				<div id="slantedbarnavigationright"></div>
+			</div>
+			<div id="companyimage"></div>
+			<div id ="name">
+				<div id="socialmedia">
+					<div id="socialmedialeft"></div>
+					<div id="socialmediaright">
+						<div  id="socialmediarightleft">
+							<input type="text" placeholder="keyword to search"  id="searchbar"/>
+						</div>
+						<div id="socialmediarightright"></div>
+					</div>
+				</div>
+			</div>
+			<div id ="optionsnavigationbar">
+				<div id="optionsnavigationbaroptions">
+					<ul>
+						<li><a href="#" style="color:#8093FF; text-shadow:1px 0px grey">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Consultants</a></li>
+						<li><a href="#">Doctor</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="imageslider">
+				<div id="sliderbutton"><input type="button" value="Sign up today" id="sliderbuttonsignup"/></div>
+			</div>
+			<div id="hospitalmenu">
+				<div id="hospitalmenuleft">
+					<div class="top">
+						<div id="drop"></div>
+					</div>
+					<div class="mid">
+						<center style="font-size:26px;color:white;font-family:HoloLens MDL2 Assets;">Emergency Case </center>
+					</div>
+					<div class="bottom">
+						<center><span style="color:white;">dfbkbkfbskdfb fkkdkfkdhskfhdjfshdkf sdfkbbdskfkbdskfkbkdbf fdskfksdbkfkbdskfkdsbkfbksdb<br/>vvdjdvdfjsdf jdfj 
+							vdfvjdsgfg  h gsyu
+						</span></center>
+					</div>
+				</div>
+				<div id="hospitalmenumid">
+				
+					<div id="midtop">
+						<div id="drop"></div>
+					</div>
+					<div id="midmid">
+						<center style="font-size:26px;color:white;font-family:HoloLens MDL2 Assets;">Emergency Case </center>
+					</div>
+					<div id="midbottom">
+						<center><span style="color:white;">dfbkbkfbskdfb fkkdkfkdhskfhdjfshdkf sdfkbbdskfkbdskfkbkdbf fdskfksdbkfkbdskfkdsbkfbksdb<br/>vvdjdvdfjsdf jdfj 
+							vdfvjdsgfg  h gsyu
+						</span></center>
+					</div>
+				</div>
+				<div id="hospitalmenuright">
+				
+					<div class="top">
+						<div id="drop"></div>
+					</div>
+					<div class="mid">
+						<center style="font-size:26px;color:white;font-family:HoloLens MDL2 Assets;">Emergency Case </center>
+					</div>
+					<div class="bottom">
+						<center><span style="color:white;">dfbkbkfbskdfb fkkdkfkdhskfhdjfshdkf sdfkbbdskfkbdskfkbkdbf fdskfksdbkfkbdskfkdsbkfbksdb<br/>vvdjdvdfjsdf jdfj 
+							vdfvjdsgfg  h gsyu
+						</span></center>
+					</div>
+				</div>
+			</div>
+			<div id="messagebody">
+				<div id="messagebodytop">
+					<div id="messagebodytopleft">
+						<center><span style="font-family:HoloLens MDL2 Assets;font-size:20px;color:#2196F3;">WELCOME MESSAGE</span></center>
+					</div>
+					<div id="messagebodytopright">
+						<center><span style="font-family:HoloLens MDL2 Assets;font-size:20px;color:#2196F3;">NEWS & EVENTS</span></center>
+					</div>
+				</div>
+				<div id="messagebodymid">
+					<div id="messagebodymidleft">
+						<div id="messagebodymidleftphoto"></div>
+						<div id="messagebodymidlefttext">
+							<p style="margin:10px;color:grey;">djhdjhbshjabhjbhjcbjhdjhdjhbshjabhjbhjcbjhdssff</br>
+								djhdjhbshjabhjbhjcbjhdjhdjhbshjabhjbhjcbjhd</br>djhdjhbshjabhjbhjcbjhdjhdjhbshjabhjbhjcbjhdfsffs</br>
+								djhdjhbshjabhjbhjcbjhdjhdjhbshjabhjbhjcbjhd</br>djhdjhbshjabhjbhjcbjhdjhdjhbshjabhjbhjcbjhd</br>
+								djhdjhbshjabhjbhjcbjhdjhdjhbshjabhjbhjcbjhd</br>djhdjhbshjabhjbhjcbjhdjhdjhbshjabhjbhjcbjhd</br>
+							</p>
+							<input type="button" id="readmore" value="Read More"/>
+						</div>
+					</div>
+					<div id="messagebodymidright">
+						<div id="messagebodymidrighttop">
+							<div id="messagebodymidrighttopleft">
+								<div id="messagebodymidrighttopleftphoto"></div>
+							</div>
+							<div id="messagebodymidrighttopright">
+								<i><span style="color:#0092A6;text-decoration:italic;margin-left:5px;">Jun 03,2013</span></i>
+								<p style="margin-left:5px;margin-top:5px;color:gray;">fkefnhfkjjjkdhkhfkfjhkdfh <br/>dgfgdsjfguysdgfygdsf
+									<br/>fkefnhfkjjjkdhkhfkfjhkdfh
+								</p>
+							</div>
+						</div>
+						<div id="messagebodymidrightbottom">
+							<div id="messagebodymidrighttopleft">
+								<div id="messagebodymidrighttopleftphoto"></div>
+							</div>
+							<div id="messagebodymidrighttopright">
+								<i><span style="color:#0092A6;text-decoration:italic;margin-left:5px;">Jun 03,2013</span></i>
+								<p style="margin-left:5px;margin-top:5px;color:gray;">fkefnhfkjjjkdhkhfkfjhkdfh <br/>dgfgdsjfguysdgfygdsf
+									<br/>fkefnhfkjjjkdhkhfkfjhkdfh
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="messagebodybottom">
+					<div id="messagebodybottomtop">
+						<div id="messagebodybottomtopleft">
+							<span style="font-family:HoloLens MDL2 Assets;font-size:22px;color:#2196F3;">HIGHTLIGHT</span>
+						</div>
+						<div id="messagebodybottomtopright">
+							<span style="font-family:HoloLens MDL2 Assets;font-size:22px;color:#2196F3;">VIDEOS</span>
+						</div>
+					</div>
+					<div id="messagebodybottombottom">
+						<div id="messagebodybottombottomleft">
+							<b><p style="margin-left:10px;margin-top:5px;">sdhshdhb</p></b>
+							<p style="margin-left:10px;color:gray;">sdhsdhsbhcbdbjhgjsgcjdg</br>bdbhdbhgsdghdd<br/>sdhsdhsbhcbdbjhgjsgcjdg</br>bdbhdbhgsdghdd<br/></p>
+						</div>
+						<div id="messagebodybottombottomright">
+							<b><p style="margin-left:10px;margin-top:5px;">sdhshdhb</p></b>
+							<p style="margin-left:10px;color:gray;">sdhsdhsbhcbdbjhgjsgcjdg</br>bdbhdbhgsdghdd<br/>sdhsdhsbhcbdbjhgjsgcjdg</br>bdbhdbhgsdghdd<br/></p>
+						
+						</div>
+						<div id="messagebodybottombottomvideos">
+							<video width="190px" height="130px" controls="controls" src="video.mp4" type="video/mp4"/>
+						</div>
+					</div>
+				</div>
+				<div id="messagebodyrightmenu">
+					<div id="messagebodyrightmenuheading">
+						<span style="font-size:26px;color:#1881f2;font-family:HoloLens MDL2 Assets;">QUICK CONTACTS</span>
+					</div>
+					<div id="messagebodyrightmenucontacts">
+						<input type="text" placeholder="Name" style="width:115px; height:35px; margin-left:10px;margin-top:10px;padding:5px;float:left;"/>
+						<input type="text" placeholder="Number" style="width:115px; height:35px; margin-left:40px;margin-top:10px;padding:5px;float:left;"/>
+						<textarea placeholder="Your Message" style="width:270px; height:55px; margin-left:10px;margin-top:10px;padding:5px;"></textarea>
+					</div>
+				</div>
+			<input type="button" value="Sign in " id="signinbutton"/>
+			<div id="call">
+				<center><span style="font-family:HoloLens MDL2 Assets;font-size:30px;color:white;">Call Us +84&nbsp;&nbsp;3333&nbsp;&nbsp;3333</span></center>
+			</div>
+			<div id="livechat">
+				<center><span style="font-family:HoloLens MDL2 Assets;font-size:30px;color:white;">LIVE CHAT SUPPORT</span></center>
+			</div>
+			</div>
+			<div id="footer">
+				<div id="footertop">
+					<div id="a">
+						<div id ="text">
+							<span style="font-family:HoloLens MDL2 Assets;font-size:20px;color:white;font-size:15px;padding:0px;">Your Visits</span>
+						
+							<ul>
+								<li><a href="#">Appointments</a></li>
+								<li><a href="#">Billing & Insuarance</a></li>
+								<li><a href="#">Find a Doctor</a></li>
+								<li><a href="#">Maps & Directions</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="b">
+						<div id ="text">
+							<span style="font-family:HoloLens MDL2 Assets;font-size:20px;color:white;font-size:15px;">Health Solutions</span>
+						
+							<ul>
+								<li><a href="#">Appointments</a></li>
+								<li><a href="#">Billing & Insuarance</a></li>
+								<li><a href="#">Find a Doctor</a></li>
+								<li><a href="#">Maps & Directions</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="c">
+						<div id ="text">
+							<span style="font-family:HoloLens MDL2 Assets;font-size:20px;color:white;font-size:15px;">Get Involved</span>
+						
+							<ul>
+								<li><a href="#">Appointments</a></li>
+								<li><a href="#">Billing & Insuarance</a></li>
+								<li><a href="#">Find a Doctor</a></li>
+								<li><a href="#">Maps & Directions</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="d">
+						<div id ="text">
+							<span style="font-family:HoloLens MDL2 Assets;font-size:20px;color:white;font-size:15px;">Contact Info</span>
+						
+							<ul>
+								<li><a href="#">Appointments</a></li>
+								<li><a href="#">Billing & Insuarance</a></li>
+								<li><a href="#">Find a Doctor</a></li>
+								<li><a href="#">Maps & Directions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="footerbottom"></div>
+			</div>
+		</div>
+	</body>
+</html>
